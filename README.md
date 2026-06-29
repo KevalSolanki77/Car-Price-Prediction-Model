@@ -1,4 +1,4 @@
-# 🚗 CarDekho Car Price Prediction
+# 🚗 Car Price Prediction Model
 
 A machine learning pipeline that predicts the resale price of used cars from listing data scraped from CarDekho. The model takes raw fields like car name, year, mileage, and engine specs, and outputs an estimated selling price.
 
