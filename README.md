@@ -1,8 +1,8 @@
-# CarDekho Car Price Prediction
+# 🚗 CarDekho Car Price Prediction
 
 A machine learning pipeline that predicts the resale price of used cars from listing data scraped from CarDekho. The model takes raw fields like car name, year, mileage, and engine specs, and outputs an estimated selling price.
 
-## Dataset
+## 📊 Dataset
 
 The dataset (`datasets/car_details.csv`) contains 8,128 used car listings with the following columns:
 
@@ -24,7 +24,7 @@ The dataset (`datasets/car_details.csv`) contains 8,128 used car listings with t
 
 Several columns (`mileage`, `engine`, `max_power`, `torque`, `seats`) contain missing values, which the pipeline handles during preprocessing.
 
-## Pipeline
+## ⚙️ Pipeline
 
 The project builds a single `scikit-learn` pipeline that takes raw data straight to predictions:
 
@@ -51,18 +51,18 @@ The project builds a single `scikit-learn` pipeline that takes raw data straight
 5. **Model**
    - `RandomForestRegressor` trained on the fully transformed feature set.
 
-## Results
+## 📈 Results
 
 5-fold cross-validation on the full dataset gives an R² score averaging around **0.967**, with individual folds ranging from 0.955 to 0.977.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Data handling:** `pandas`, `numpy`
 - **Visualization:** `matplotlib`, `seaborn`
 - **Modeling:** `scikit-learn` (`Pipeline`, `ColumnTransformer`, `RandomForestRegressor`, `IterativeImputer`)
 - **Serialization:** `pickle`
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 .
@@ -74,7 +74,7 @@ The project builds a single `scikit-learn` pipeline that takes raw data straight
 └── README.md
 ```
 
-## Running the Project
+## 🚀 Running the Project
 
 1. Clone the repo and install the dependencies:
    ```bash
@@ -89,7 +89,7 @@ The project builds a single `scikit-learn` pipeline that takes raw data straight
    model.predict(new_data)
    ```
 
-## Possible Improvements
+## 💡 Possible Improvements
 
 - Compare `RandomForestRegressor` against gradient boosting models (XGBoost, LightGBM).
 - Hold out a proper test set for a final, unbiased R² score instead of relying on cross-validation alone.
